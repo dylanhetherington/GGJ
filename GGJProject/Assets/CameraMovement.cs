@@ -17,7 +17,7 @@ public class CameraMovement : MonoBehaviour {
     void findPlayerPosition()
     {
         Transform player = GameObject.Find("Player").transform;
-        transform.position = new Vector3(player.position.x, player.position.y + 3, player.position.z - 10);
+        transform.position = new Vector3(player.position.x, player.position.y + 3.6f, player.position.z - 4.0f);
     }
     public void AdjustCameraRotation(Transform player)
     {
