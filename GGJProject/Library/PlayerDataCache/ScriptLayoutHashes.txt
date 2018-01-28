@@ -1,5 +1,4 @@
 WindowsStandalone
-dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 5fd978a13f0394bd8e7e1f59b5a83107 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -110,7 +109,10 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NewBehaviourScript
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CameraMovement
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlayerSelect
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Settings
+dfa53cf55182029c1b9741fbaf1cfdcb Assembly-CSharp.dll:.Player1
+dfa53cf55182029c1b9741fbaf1cfdcb Assembly-CSharp.dll:.Player2
 32e8fe00b63ed946490b898f6024a2f2 Facebook.Unity.Settings.dll:Facebook.Unity.Settings.FacebookSettings
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -134,5 +136,6 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
-caac02bc6c149058a432692b03f533d0 Assembly-CSharp.dll:.MapManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MainMenu
+a463aa5a0d8ce9f77361b42ba5a37c3c Assembly-CSharp.dll:.MapManager
+dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker

@@ -1,0 +1,55 @@
+Initialize engine version: 2017.1.0p4 (892c0f8d8f8a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     4058 MB
+    Driver:   22.21.13.8476
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\gamesjam0035\Documents\GGJ\FinalBuild\PacketRunnerz_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.276 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.677385 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 3644 -> priority: 1 
+  Thread -> id: 2b30 -> priority: 1 
+  Thread -> id: c44 -> priority: 1 
+  Thread -> id: 2804 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.922735 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 349.
+Total: 0.416120 ms (FindLiveObjects: 0.037829 ms CreateObjectMapping: 0.029031 ms MarkObjects: 0.332251 ms  DeleteObjects: 0.015835 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.576821 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 448.
+Total: 0.573302 ms (FindLiveObjects: 0.036949 ms CreateObjectMapping: 0.047506 ms MarkObjects: 0.439287 ms  DeleteObjects: 0.048972 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.457448 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 449.
+Total: 0.503215 ms (FindLiveObjects: 0.042814 ms CreateObjectMapping: 0.029618 ms MarkObjects: 0.422278 ms  DeleteObjects: 0.007037 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.961857 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 449.
+Total: 0.441340 ms (FindLiveObjects: 0.037829 ms CreateObjectMapping: 0.032257 ms MarkObjects: 0.363042 ms  DeleteObjects: 0.007331 ms)
+
