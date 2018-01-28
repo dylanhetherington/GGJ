@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public Slider health;
+    public Text speed;
     public float movementSpeed;
     public float facing;
     bool keyDown;
-    public int health;
+    public int currentHealth;
     //Rigidbody rb;
     // Use this for initialization
     void Start()
@@ -15,15 +19,29 @@ public class Player : MonoBehaviour
         movementSpeed = 0.0f;
         facing = 0.0f;
         keyDown = false;
-        health = 100;
+        currentHealth = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
-        movementSpeed += Time.deltaTime;
+        /*if (movementSpeed > 1000)
+        {
+            movementSpeed = 1000;
+        }
+        if(movementSpeed < 1000)
+        { */
+            movementSpeed += Time.deltaTime*1;
+        //}
+        movementSpeed = (Mathf.Floor(movementSpeed * 100))/100;
         PlayerInput();
         MovePlayer();
+        health.value = currentHealth;
+        speed.text = ("speed:" + movementSpeed);
+        if ((GameObject.Find("Player").transform.position.y < -5) || (currentHealth <= 0))
+        {
+            SceneManager.LoadScene("Procedural Scene");
+        }
     }
     void PlayerInput()
     {
@@ -50,14 +68,25 @@ public class Player : MonoBehaviour
     {
         if (other.tag == "Spike")
         {
-            health -= 25;
-            movementSpeed -= 20;
+            currentHealth -= 20;
+            if (movementSpeed > 5)
+            {
+                movementSpeed -= 5;
+            }
+            else
+            {
+                movementSpeed = 0;
+            }
             Destroy(other.gameObject);
             
         }
         if (other.tag == "Boost")
         {
-            movementSpeed += 20;
+            if (currentHealth < 100)
+            { 
+                currentHealth += 5;
+            }
+            movementSpeed += 5;
             Destroy(other.gameObject);
         }
     }
