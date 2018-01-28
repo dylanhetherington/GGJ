@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MapManager : MonoBehaviour {
-    public GameObject[] activeTiles= new GameObject[4];
+    GameObject[] activeTiles= new GameObject[6];
     public GameObject ramp;
     public GameObject spikes;
     public GameObject spike;
@@ -29,19 +29,23 @@ public class MapManager : MonoBehaviour {
         activeTiles[3] = Instantiate(ramp, new Vector3(distanceBetweenTiles * 3, 0, 0), Quaternion.identity);
         activeTiles[3].transform.Rotate(new Vector3(-90, 0, 0));
         activeTiles[3].transform.localScale = (new Vector3(100, 100, 100));
-        tileCount = 4;
+        activeTiles[4] = Instantiate(ramp, new Vector3(distanceBetweenTiles * 4, 0, 0), Quaternion.identity);
+        activeTiles[4].transform.Rotate(new Vector3(-90, 0, 0));
+        activeTiles[4].transform.localScale = (new Vector3(100, 100, 100));
+        activeTiles[5] = Instantiate(ramp, new Vector3(distanceBetweenTiles * 5, 0, 0), Quaternion.identity);
+        activeTiles[5].transform.Rotate(new Vector3(-90, 0, 0));
+        activeTiles[5].transform.localScale = (new Vector3(100, 100, 100));
+        tileCount = 6;
         activeTile = 0;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        //player = GameObject.Find("Player").transform.position;
-        if (GameObject.Find("Player").transform.position.x >= (tileCount - 3) * distanceBetweenTiles)
+        if (GameObject.Find("Player").transform.position.x >= (tileCount - 2) * distanceBetweenTiles || GameObject.Find("Player2").transform.position.x >= (tileCount - 2) * distanceBetweenTiles)
         {
             DestroyMapTile();
             SpawnMapTile();
-            SpawnPickUps();
         }
     }
     void SpawnMapTile()
@@ -50,20 +54,31 @@ public class MapManager : MonoBehaviour {
         activeTiles[activeTile].transform.Rotate(new Vector3(-90, 0, 0));
         activeTiles[activeTile].transform.localScale = (new Vector3(100, 100, 100));
         activeTile += 1;
-        if (activeTile >= 4)
+        if (activeTile >= 6)
         {
             activeTile = 0;
         }
+        SpawnPickUps(Random.Range(0, 4));
         tileCount += 1;
     }
     void DestroyMapTile()
     {
         Destroy(activeTiles[activeTile]);
     }
-    void SpawnPickUps()
+    void SpawnPickUps(int spawnAmount)
     {
-        spikes = Instantiate(spike, new Vector3(-distanceBetweenTiles/2 + distanceBetweenTiles * tileCount, 3, 0), Quaternion.identity);
-        boosts = Instantiate(boost, new Vector3(-distanceBetweenTiles + distanceBetweenTiles * tileCount, 0, 0), Quaternion.identity);
+        for (int i = 0; i < spawnAmount; i++)
+        {
+            int type = Random.Range(0, 2);
+            if (type == 0)
+            {
+                spikes = Instantiate(spike, new Vector3(Random.Range((distanceBetweenTiles * tileCount) + 2, (distanceBetweenTiles * tileCount) -2), 3, Random.Range(-4, 4)), Quaternion.identity);
+            }
+            else if (type == 1)
+            {
+                boosts = Instantiate(boost, new Vector3(Random.Range((distanceBetweenTiles * tileCount) + 2, (distanceBetweenTiles * tileCount) - 2), 3, Random.Range(-4, 4)), Quaternion.identity);
+            }
+        }
     }
     void DestroyPickUps()
     {
